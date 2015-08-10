@@ -47,7 +47,7 @@ module Icalendar
           Icalendar.logger.error "No method \"#{method_name}\" for component #{component}"
           raise nme
         else
-          Icalendar.logger.warn "No method \"#{method_name}\" for component #{component}. Appending to custom."
+          #Icalendar.logger.warn "No method \"#{method_name}\" for component #{component}. Appending to custom."
           component.append_custom_property prop_name, prop_value
         end
       end
